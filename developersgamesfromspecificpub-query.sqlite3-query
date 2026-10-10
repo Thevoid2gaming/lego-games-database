@@ -1,0 +1,12 @@
+-- database: ./LEGO.db
+
+SELECT Developers.developerTitle, Platforms.platformType, Games.gameTitle 
+FROM Developers
+JOIN Games ON Developers.developerID = Games.developerID
+JOIN Platforms ON Games.platformID = Platforms.platformID;
+
+
+
+
+
+

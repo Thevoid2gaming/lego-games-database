@@ -1,0 +1,9 @@
+-- database: ./LEGO.db
+
+SELECT Platforms.platformType, Games.gameTitle 
+FROM Platforms 
+JOIN Games ON Platforms.platformID = Games.platformID;
+
+
+
+

@@ -1,0 +1,15 @@
+-- database: ./LEGO.db
+
+SELECT Publisher.publisherTitle, Developers.developerTitle, COUNT(Games.gameID) AS totalGames 
+FROM Publisher
+JOIN Developers ON Publisher.publisherID = Developers.publisherID
+LEFT JOIN Games ON Developers.developerID = Games.developerID
+GROUP BY Developers.developerID, Publisher.publisherTitle;
+
+
+
+
+
+
+
+

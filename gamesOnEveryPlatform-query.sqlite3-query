@@ -1,0 +1,12 @@
+-- database: ./LEGO.db
+
+SELECT Games.gameTitle, Developers.developerTitle, Publisher.publisherTitle 
+FROM Games
+JOIN Developers ON Games.developerID = Developers.developerID
+JOIN Publisher ON Developers.publisherID = Publisher.publisherID
+WHERE Publisher.publisherID = 1; 
+
+
+
+
+

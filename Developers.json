@@ -1,0 +1,51 @@
+[
+  {
+    "developerID": 1,
+    "developerTitle": "TT Games",
+    "publisherID": "1",
+    "yearFounded": "1989",
+    "location": "England"
+  },
+  {
+    "developerID": 2,
+    "developerTitle": "Light Brick Studio",
+    "publisherID": "2",
+    "yearFounded": "2020",
+    "location": "Denmark"
+  },
+  {
+    "developerID": 3,
+    "developerTitle": "Red Games Co.",
+    "publisherID": "2",
+    "yearFounded": "2019",
+    "location": "United States"
+  },
+  {
+    "developerID": 4,
+    "developerTitle": "Clockstone Studio",
+    "publisherID": "3",
+    "yearFounded": "2006",
+    "location": "Austria"
+  },
+  {
+    "developerID": 5,
+    "developerTitle": "Epic Games",
+    "publisherID": "5",
+    "yearFounded": "1991",
+    "location": "United States"
+  },
+  {
+    "developerID": 6,
+    "developerTitle": "Guerilla",
+    "publisherID": "6",
+    "yearFounded": "2005",
+    "location": "Netherlands"
+  },
+  {
+    "developerID": 8,
+    "developerTitle": "Visual Concepts",
+    "publisherID": "4",
+    "yearFounded": "1988",
+    "location": "United States"
+  }
+]

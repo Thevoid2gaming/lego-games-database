@@ -1,0 +1,40 @@
+gameID,gameTitle,genre,publisherID,developerID,reviewScores,platformID,releaseYear
+1,LEGO Incredibles,Action-Adventure,1,1,69,1,2018
+2,LEGO Incredibles,Action-Adventure,1,1,69,2,2018
+3,LEGO Incredibles,Action-Adventure,1,1,69,3,2018
+4,LEGO Incredibles,Action-Adventure,1,1,69,4,2018
+5,LEGO DC Super-Villains,Action-Adventure,1,1,75,1,2018
+6,LEGO DC Super-Villains,Action-Adventure,1,1,75,2,2018
+7,LEGO DC Super-Villains,Action-Adventure,1,1,75,3,2018
+8,LEGO DC Super-Villains,Action-Adventure,1,1,75,4,2018
+9,The LEGO Movie 2 Video Game,Action-Adventure,1,1,65,1,2019
+10,The LEGO Movie 2 Video Game,Action-Adventure,1,1,65,2,2019
+11,The LEGO Movie 2 Video Game,Action-Adventure,1,1,65,3,2019
+12,The LEGO Movie 2 Video Game,Action-Adventure,1,1,65,4,2019
+13,LEGO Builder's Journey,Puzzle,2,2,80,1,2021
+14,LEGO Builder's Journey,Puzzle,2,2,80,2,2021
+15,LEGO Builder's Journey,Puzzle,2,2,80,3,2021
+16,LEGO Builder's Journey,Puzzle,2,2,80,4,2021
+17,LEGO Star Wars The Skywalker Saga,Action-Adventure,1,1,83,1,2022
+18,LEGO Star Wars The Skywalker Saga,Action-Adventure,1,1,83,2,2022
+19,LEGO Star Wars The Skywalker Saga,Action-Adventure,1,1,83,3,2022
+20,LEGO Star Wars The Skywalker Saga,Action-Adventure,1,1,83,4,2022
+21,LEGO Brawls,Fighting,2,3,65,1,2022
+22,LEGO Brawls,Fighting,2,3,65,2,2022
+23,LEGO Brawls,Fighting,2,3,65,3,2022
+24,LEGO Brawls,Fighting,2,3,65,4,2022
+25,LEGO BrickTales,puzzle,3,4,80,1,2022
+26,LEGO BrickTales,puzzle,3,4,80,2,2022
+27,LEGO BrickTales,puzzle,3,4,80,3,2022
+28,LEGO BrickTales,puzzle,3,4,80,4,2022
+29,LEGO 2K Drive,Racing,4,8,75,1,2023
+30,LEGO 2K Drive,Racing,4,8,75,2,2023
+31,LEGO 2K Drive,Racing,4,8,75,3,2023
+32,LEGO 2K Drive,Racing,4,8,75,4,2023
+33,LEGO Fortnite,Survival,5,5,70,1,2023
+34,LEGO Fortnite,Survival,5,5,70,2,2023
+35,LEGO Fortnite,Survival,5,5,70,3,2023
+36,LEGO Fortnite,Survival,5,5,70,4,2023
+37,LEGO Horizon Adventures,Action-Adventures,6,6,70,1,2024
+38,LEGO Horizon Adventures,Action-Adventures,6,6,70,3,2024
+39,LEGO Horizon Adventures,Action-Adventures,6,6,70,4,2024

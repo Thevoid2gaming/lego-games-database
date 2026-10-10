@@ -1,0 +1,62 @@
+-- database: ./LEGO.db
+
+PRAGMA foreign_keys = OFF;
+
+-- 1. Fix Publisher (yearFounded -> INTEGER)
+CREATE TABLE Publisher_new (
+    publisherID INTEGER PRIMARY KEY AUTOINCREMENT,
+    publisherTitle TEXT NOT NULL,
+    yearFounded INTEGER
+);
+INSERT INTO Publisher_new SELECT publisherID, publisherTitle, CAST(yearFounded AS INTEGER) FROM Publisher;
+DROP TABLE Publisher;
+ALTER TABLE Publisher_new RENAME TO Publisher;
+
+-- 2. Fix Developers (publisherID, yearFounded -> INTEGER)
+CREATE TABLE Developers_new (
+    developerID INTEGER PRIMARY KEY AUTOINCREMENT,
+    developerTitle TEXT NOT NULL,
+    publisherID INTEGER REFERENCES Publisher(publisherID),
+    yearFounded INTEGER,
+    location TEXT
+);
+INSERT INTO Developers_new SELECT developerID, developerTitle, CAST(publisherID AS INTEGER), CAST(yearFounded AS INTEGER), location FROM Developers;
+DROP TABLE Developers;
+ALTER TABLE Developers_new RENAME TO Developers;
+
+-- 3. Fix Platforms (ensuring clean INTEGER PK)
+CREATE TABLE Platforms_new (
+    platformID INTEGER PRIMARY KEY AUTOINCREMENT,
+    platformType TEXT NOT NULL,
+    platformDeveloper TEXT
+);
+INSERT INTO Platforms_new SELECT platformID, platformType, platformDeveloper FROM Platforms;
+DROP TABLE Platforms;
+ALTER TABLE Platforms_new RENAME TO Platforms;
+
+-- 4. Fix Games (foreign keys, releaseYear -> INTEGER; reviewScores -> REAL)
+CREATE TABLE Games_new (
+    gameID INTEGER PRIMARY KEY AUTOINCREMENT,
+    gameTitle TEXT NOT NULL,
+    genre TEXT,
+    publisherID INTEGER REFERENCES Publisher(publisherID),
+    developerID INTEGER REFERENCES Developers(developerID),
+    reviewScores REAL,
+    platformID INTEGER REFERENCES Platforms(platformID),
+    releaseYear INTEGER
+);
+INSERT INTO Games_new SELECT 
+    gameID, 
+    gameTitle, 
+    genre, 
+    CAST(publisherID AS INTEGER), 
+    CAST(developerID AS INTEGER), 
+    CAST(reviewScores AS REAL), 
+    CAST(platformID AS INTEGER), 
+    CAST(releaseYear AS INTEGER) 
+FROM Games;
+DROP TABLE Games;
+ALTER TABLE Games_new RENAME TO Games;
+
+PRAGMA foreign_keys = ON;
+

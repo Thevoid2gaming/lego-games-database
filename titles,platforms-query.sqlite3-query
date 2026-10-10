@@ -1,0 +1,4 @@
+-- database: ./LEGO.db
+
+SELECT AVG(reviewScores) AS averageScore FROM Games;
+

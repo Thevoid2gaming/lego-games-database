@@ -1,0 +1,5 @@
+-- database: ./LEGO.db
+
+SELECT publisherID, COUNT(*) AS totalGames FROM Games GROUP BY publisherID;
+
+
